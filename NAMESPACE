@@ -1,0 +1,14 @@
+import("changepoint")
+import("methods")
+importFrom("grDevices","colorRampPalette","hsv")
+importFrom("ggplot2","ggplot","geom_raster","ggtitle","scale_fill_gradient2","theme","geom_abline","geom_point","aes",
+           "geom_vline","ggplotGrob","labs","theme_classic","element_text","geom_line")
+importFrom("reshape","melt")
+importFrom("grid","unit.pmax","textGrob")
+importFrom("gridExtra","grid.arrange")
+importFrom("data.table","rbindlist")
+importFrom("graphics","par","abline","segments","axis","legend","hist")
+
+export("InfluenceMap","ParameterStability","LocationStability",
+       "StabilityOverview") # plots
+exportMethods("influence")
