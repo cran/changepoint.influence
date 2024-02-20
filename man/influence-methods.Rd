@@ -7,7 +7,6 @@
  ~~ Methods for function \code{influence}  ~~
 }
 \usage{
-influence(model,...)
 \S4method{influence}{cpt}(model,method=c("delete","outlier"),pos=TRUE,same=FALSE,sd=0.01)
 }
 \arguments{

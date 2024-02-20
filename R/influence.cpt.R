@@ -8,7 +8,7 @@ setMethod("influence","cpt",function(model,method=c("delete","outlier"),pos=TRUE
   # sd=0.01       MOO: jitter to add to the modify point
   
   
-  if(class(model)!="cpt"){stop("This function takes a cpt object as the model input")}
+  if(!inherits(model,"cpt")){stop("This function takes a cpt object as the model input")}
   if(cpttype(model)!="mean"){stop("Currently only models generated from the cpt.mean function are supported.")}
 
   n=length(data.set(model))

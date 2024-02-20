@@ -50,7 +50,7 @@ cpt.lty=c("dashed","dotdash","dotted"),ylab='',ggops=NULL)
 	
 How to interpret the Influence Map (please also read the paper in the references for fuller details):
 
-\itemize{
+\describe{
 \item{colouring:}{Colouring above the diagonal indicates that an al-teration of the corresponding data point (on the vertical axis) affects earlier data points,colouring below the diagonal indicates that subsequent data points are affected.}
 \item{horizonal span:}{A stop in colouring indicates that change-points have moved, while a continuation of colouring to the last data point indicates that, in  total,  fewer  or  additional  changepoints  are  detected.}
 \item{local vs global:}{Most colouring originates on the diagonal,thereby indicating that a data point's alteration mainly affects neighbouring data points that most often belong to the same segment.  By contrast, in some cases a coloured pixel may  originate  away  from  the  diagonal,  thereby  exercising  global  influence.}
@@ -61,14 +61,14 @@ How to interpret the Influence Map (please also read the paper in the references
   The function returns a plot denoted the Influence Map. If \code{resid=NULL} then the residuals (observed class - expected class) are also returned.
 }
 \references{
-Wilms I, Killick R, Matteson DS (2021) Graphical Influence Diagnostics for Changepoint Models, \emph{ArxiV: 2107.10572}}
+Wilms I, Killick R, Matteson DS (2022) Graphical Influence Diagnostics for Changepoint Models, \emph{Journal of Computational and Graphical Statistics},  \bold{31:3}, 753--765 \emph{DOI: 10.1080/10618600.2021.2000873}}
 \author{
 Rebecca Killick
 }
 
 
 \seealso{
-\code{\link{influence}}, \code{\link{StabilityOverview}}, \code{\link{ParameterStability}}, \code{\link{LocationStability}}
+\code{\link{influence-methods}}, \code{\link{StabilityOverview}}, \code{\link{ParameterStability}}, \code{\link{LocationStability}}
 }
 \examples{
 #### Generate Simulated data example ####

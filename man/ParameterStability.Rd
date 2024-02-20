@@ -40,14 +40,14 @@ ParameterStability(influence,original.mean=NULL,digits=6,ylab='',xlab='Index',
   The function returns a plot (silently).
 }
 \references{
-Wilms I, Killick R, Matteson DS (2021) Graphical Influence Diagnostics for Changepoint Models, \emph{ArxiV: 2107.10572}}
+Wilms I, Killick R, Matteson DS (2022) Graphical Influence Diagnostics for Changepoint Models, \emph{Journal of Computational and Graphical Statistics},  \bold{31:3}, 753--765 \emph{DOI: 10.1080/10618600.2021.2000873}}
 \author{
 Rebecca Killick
 }
 
 
 \seealso{
-\code{\link{influence}}, \code{\link{StabilityOverview}},\code{\link{LocationStability}},\code{\link{InfluenceMap}}
+\code{\link{influence-methods}}, \code{\link{StabilityOverview}},\code{\link{LocationStability}},\code{\link{InfluenceMap}}
 }
 \examples{
 #### Generate Simulated data example ####
